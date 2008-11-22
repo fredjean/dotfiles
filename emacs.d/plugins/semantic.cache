@@ -1,0 +1,16 @@
+;; Object plugins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugins/"
+  :tables (list 
+   (semanticdb-table "frame-restore.el"
+    :major-mode 'emacs-lisp-mode
+    :tags '(("cl" include nil nil [2086 2099]) ("final-frame-params" variable (:default-value (quote ("-adobe-courier-medium-r-normal--*-120-*-*-m-*-iso8859-1" 50 50 150 50 nil))) nil [2303 2408]) ("if" code nil nil [2453 3274]) ("if" code nil nil [3276 4242]) ("frame-restore" package nil nil [4244 4268]))
+    :file "frame-restore.el"
+    :pointmax 4300
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
