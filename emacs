@@ -53,6 +53,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/plugins/rinari")
 (require 'rinari)
+(setq rinari-tags-file-name "TAGS")
 
 (load "~/.emacs.d/plugins/nxhtml/autostart.el")
 (setq
@@ -63,6 +64,13 @@
       rng-nxml-auto-validate-flag nil
       nxml-degraded t)
      (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))
+
+;; MuMaMo-Mode for rhtml files
+(add-to-list 'load-path "~/path/to/your/elisp/nxml-directory/util")
+(require 'mumamo-fun)
+(setq mumamo-chunk-coloring 'submode-colored)
+(add-to-list 'auto-mode-alist '("\\.rhtml\\'" . eruby-html-mumamo))
+(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-html-mumamo))
 
 (add-to-list 'load-path
 	     "~/.emacs.d/")
