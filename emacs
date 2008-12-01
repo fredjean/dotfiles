@@ -8,7 +8,7 @@
 (require 'ruby-mode)
 
 (add-hook 'window-setup-hook (lambda () 
-  ;; (tool-bar-mode -1) 
+  (tool-bar-mode -1) 
   (mac-toggle-max-window) 
   ))
 
@@ -56,15 +56,16 @@
 (setq rinari-tags-file-name "TAGS")
 
 (load "~/.emacs.d/plugins/nxhtml/autostart.el")
-(setq
-      nxhtml-global-minor-mode t
-      mumamo-chunk-coloring 'submode-colored
-      nxhtml-skip-welcome t
-      indent-region-mode t
-      rng-nxml-auto-validate-flag nil
-      nxml-degraded t)
-     (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))
-
+;; (setq
+;;      nxhtml-global-minor-mode t
+;;     mumamo-chunk-coloring 'submode-colored
+;;      nxhtml-skip-welcome t
+;;      indent-region-mode t
+;;      rng-nxml-auto-validate-flag nil
+;;      nxml-degraded t)
+;;     (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))
+;;     (add-to-list 'auto-mode-alist '("\\.rhtml" . eruby-nxhtml-mumamo))
+     
 ;; MuMaMo-Mode for rhtml files
 (add-to-list 'load-path "~/path/to/your/elisp/nxml-directory/util")
 (require 'mumamo-fun)
@@ -101,7 +102,7 @@
  '(ecb-auto-activate t)
  '(ecb-layout-name "left7")
  '(ecb-options-version "2.32")
- '(ecb-source-path (quote ("~/Projects/kenai/junction2" "~/Projects/deploy-trunk" "~/Projects/kenai/CWPAuthservice" ("/" "/"))))
+ '(ecb-source-path (quote ("~/Projects/kenai/junction2" "~/Projects/deploy-trunk" "~/Projects/jruby-rack" "~/Projects/kenai/CWPAuthservice" ("/" "/"))))
  '(ecb-tip-of-the-day nil)
  '(ecb-windows-width 0.15)
  '(show-paren-mode t)
@@ -117,3 +118,4 @@
 ;; Customization follows below
 (setq history-length 250)
 (add-to-list 'desktop-globals-to-save 'file-name-history)
+(setq mac-command-key-is-meta t)
