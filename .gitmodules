@@ -1,0 +1,3 @@
+[submodule "emacs.d/plugins/magit"]
+	path = emacs.d/plugins/magit
+	url = git://gitorious.org/magit/mainline.git
