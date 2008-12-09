@@ -29,13 +29,6 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/rinari")
 (require 'rinari)
 (setq rinari-tags-file-name "TAGS")
-     
-;; MuMaMo-Mode for rhtml files
-;; (add-to-list 'load-path "~/.emacs.d/plugin/nxhtml/util")
-;; (require 'mumamo-fun)
-;; (setq mumamo-chunk-coloring 'submode-colored)
-;; (add-to-list 'auto-mode-alist '("\\.rhtml\\'" . eruby-html-mumamo))
-;; (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-html-mumamo))
 
 (setq
       nxhtml-global-minor-mode t
@@ -55,6 +48,21 @@
 (require 'color-theme)
 ;;(color-theme-initialize)
 (color-theme-charcoal-black)
+
+(add-hook 'eshell-mode-hook
+   '(lambda nil
+   (let ((path))
+      (setq path "/Users/fjean/bin:/Users/fjean/depot_tools:/Users/fjean/.gem/ruby/1.8/bin:/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/bin:/Users/fjean/scala/bin:/Users/fjean/jruby/bin:/Users/fjean/groovy/bin:/Users/fjean/grails/bin:/Users/fjean/maven/bin:/opt/local/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin")
+    (setenv "PATH" path))
+   (local-set-key "\C-u" 'eshell-kill-input))
+ )
+
+;; (defun eshell-handle-ansi-color ()
+;;  (ansi-color-apply-on-region eshell-last-output-start
+;;                              eshell-last-output-end))
+;;(add-to-list 'eshell-output-filter-functions 'eshell-handle-ansi-color)
+
+(define-key global-map [(alt return)] 'mac-toggle-max-window)
 
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
