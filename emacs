@@ -27,17 +27,27 @@
 (setq ido-enable-flex-matching t)
 
 (add-to-list 'load-path "~/.emacs.d/plugins/rinari")
+(add-to-list 'load-path "~/.emacs.d/plugins/rinari/rhtml")
 (require 'rinari)
 (setq rinari-tags-file-name "TAGS")
 
+;; MuMaMo-Mode for rhtml files
+(add-to-list 'load-path "~/.emacs.d/plugins/nxhtml/util")
+(require 'mumamo-fun)
+(setq mumamo-chunk-coloring 'submode-colored)
+(add-to-list 'auto-mode-alist '("\\.rhtml\\'" . eruby-html-mumamo))
+(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-html-mumamo))
+;;; nxml (HTML ERB template support)
+(load "~/.emacs.d/plugins/nxhtml/autostart.el")
+     
 (setq
-      nxhtml-global-minor-mode t
-      mumamo-chunk-coloring 'submode-colored
-      nxhtml-skip-welcome t
-      indent-region-mode t
-      rng-nxml-auto-validate-flag nil
-      nxml-degraded t)
-     (add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))
+  nxhtml-global-minor-mode t
+  mumamo-chunk-coloring 'submode-colored
+  nxhtml-skip-welcome t
+  indent-region-mode t
+  rng-nxml-auto-validate-flag nil
+  nxml-degraded t)
+;;(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-html-mumamo))
 
 (add-to-list 'load-path
 	     "~/.emacs.d/")
@@ -45,9 +55,10 @@
 (autoload 'js2-mode "js2" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
+(load "~/.emacs.d/plugins/zenburn/zenburn.el")
 (require 'color-theme)
 ;;(color-theme-initialize)
-(color-theme-charcoal-black)
+(color-theme-zenburn)
 
 (add-hook 'eshell-mode-hook
    '(lambda nil

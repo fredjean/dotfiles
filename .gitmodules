@@ -1,3 +1,6 @@
 [submodule "emacs.d/plugins/magit"]
 	path = emacs.d/plugins/magit
 	url = git://gitorious.org/magit/mainline.git
+[submodule "emacs.d/plugins/rinari"]
+	path = emacs.d/plugins/rinari
+	url = git://github.com/eschulte/rinari.git
