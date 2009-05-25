@@ -11,12 +11,12 @@ export JRUBY_HOME=/Users/fjean/jruby
 export SCALA_HOME=/Users/fjean/scala
 export TC_HOME=/Users/fjean/terracotta
 export TC_JAVA_HOME=$JAVA_HOME
+export APPENGINE_HOME=/Users/fjean/appengine
 export MYSQL_HOME=/usr/local/mysql
-export PATH=~/bin:~/depot_tools:/Users/fjean/.gem/ruby/1.8/bin:$JAVA_HOME/bin:$SCALA_HOME/bin:$JRUBY_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$MAVEN_HOME/bin:/opt/local/bin:/usr/local/bin:$MYSQL_HOME/bin:$PATH
-# export CLASSPATH=$JRUBY_HOME/lib/ruby/gems/1.8/gems/jdbc-mysql-5.0.4/lib/mysql-connector-java-5.0.4-bin.jar
-export CDPATH=.:~:~/Projects:~/Projects/kenai:~/Library:~/Documents
+export PATH=.:~/bin:~/depot_tools:$JAVA_HOME/bin:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$MAVEN_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:$MYSQL_HOME/bin:$PATH:$JRUBY_HOME/bin
+export CDPATH=.:~:~/Projects:~/Projects/kenai\~subversion:~/Library:~/Documents
 
-export GREP_OPTIONS='--color=auto' 
+export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;36'
 
 export EDITOR=emacs
@@ -35,8 +35,12 @@ typeset -ga preexec_functions
 typeset -ga precmd_functions
 typeset -ga chpwd_functions
 
-setopt prompt_subst
+autoload colors zsh/terminfo
+if [[ "$terminfo[colors]" -ge 8 ]]; then
+    colors
+fi
 
+setopt prompt_subst
 fpath=(~/.zsh/fns $fpath)
 autoload promptinit && promptinit
 prompt fred
@@ -54,7 +58,7 @@ zstyle ':completion:*::::' completer _expand _complete _ignored _approximate _ma
 # allow one error for every three characters typed in approximate completer
 zstyle -e ':completion:*:approximate:*' max-errors \
     'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
-	    
+
 # insert all expansions for expand completer
 zstyle ':completion:*:expand:*' tag-order all-expansions
 
