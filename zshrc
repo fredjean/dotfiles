@@ -12,12 +12,8 @@ export EDITOR=emacs
 
 export HGMERGE=kdiff3
 
-export AUTOFEATURE=true
-export RSPEC=true
-
 alias screen='screen -U'
 alias mq='hg -R $(hg root)/.hg/patches'
-alias jr='../jruby/bin/jruby -S'
 
 set meta-flag on
 set input-meta on
