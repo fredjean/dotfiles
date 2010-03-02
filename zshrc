@@ -1,8 +1,12 @@
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
-export JDK_HOME=/System/Library/Frameworks/JavaVM.framework/Home
-export MYSQL_HOME=/usr/local/mysql
-export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:$MYSQL_HOME/bin:$PATH
-export CDPATH=.:~:~/Projects:~/Projects/kenai:~/Library:~/Documents
+JAVA_HOME=/Library/Java/Home
+JAVA_OPTS="-Xmx512M -XX:PermSize=256m -XX:MaxPermSize=512m -Djava.awt.headless=true"
+JREBEL_HOME=/Applications/ZeroTurnaround/JRebel
+MAVEN_HOME=/opt/tools/maven2
+MAVEN_OPTS="$JAVA_OPTS -noverify -javaagent:$JREBEL_HOME/jrebel.jar"
+PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:$PATH
+export JAVA_HOME JAVA_OPTS JREBEL_HOME MAVEN_HOME MAVEN_OPTS
+
+export CDPATH=.:~:~/dev:~/Library:~/Documents
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/HEAD
 
 export GREP_OPTIONS='--color=auto'
