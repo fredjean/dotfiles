@@ -20,11 +20,6 @@ And you probably thought fred was overkill.
 EOF
 }
 
-export GIT_AUTHOR_NAME="Frederic Jean"
-export GIT_AUTHOR_EMAIL="frederic.jean@sun.com"
-export GIT_COMMITTER_NAME="Frederic Jean"
-export GIT_COMMITTER_EMAIL="frederic.jean@sun.com"
-
 prompt_fred_setup () {
   prompt_fred_color1=${1:-'blue'}
   prompt_fred_color2=${2:-'cyan'}

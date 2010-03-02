@@ -1,522 +1,500 @@
-sudo gem install selenium markaby
-sudo gem install selenium
-mysql -u root
-which mysql
-/usr/local/mysql/bin/mysqld_safe
-sudo /usr/local/mysql/bin/mysqld_safe
+git status
+git commit
+ruby -S script/server
+cp -r ~/Downloads/hemingway .
+git add hemingway/
+git commit
+ssh fredjean.net
+cd ../db
+ls
+cd ../themes
+cp -r ~/Downloads/grunge .
+git status
+git add grunge/
+git commit
+cp -r ~/Downloads/couch .
+cp -r ~/Downloads/blocks .
+git status
+git add couch
+git commit
+git push
+ssh fredjean.net
+cd outofmymind
+ls
+cd layouts
+ls
+cp ../../couch/layouts/default.html.erb .
+ls
+cd ..
+ls
+ls ../couch/stylesheets
+cd layouts
+ls
+emacs default.html.erb
+cd ../stylesheets
+ls
+git mv application.css outofmymind.css
+ls
+cd ..
+ls
+cd images
+ls
+cd ..
+ls
+ls
+cd ..
+cp -r ~/Downloads/unoriginal-sin .
+cp -r ~/Downloads/modernist .
+git status
+git add git clone git@github.com:fredjean/typo.git
+git add modernist/ outofmymind/layouts/default.html.erb unoriginal-sin/
+git status
+git commit
+git push
+ls
+git mv outofmymind outofmymind.old
+git cp
+cp -r couch outofmymind
+cd outofmymind
+ls
+cd images
+ls
+cp ../../outofmymind.old/images/background.gif couch2.jpg
+git status
+rm -rf outofmymind
+git reset HEAD
+git status
+cd ..
 pwd
-cd /usr/local/mysql/data
-ls
-su -
-ls /tmp
-ps -auxwww | grep mysql
-mysql -u root
-sudo kill 88
-ps -auxwww | grep mysql
-ls /tmp
-ls
-mysql -u root
-pwd
-cd Rails\ for\ Java\ Developers
-ls
-cd rails_xt
-ls
-rake migrate
 cd ..
 cd ..
-mv Rails\ for\ Java\ Developers rails4java
-cd rails4java
-ls
-cd rails_xt
-ls
-rake migrate
-rake migrate --trace
-ls
 cd ..
-ls
-cd rails4java
-mate rails_xt
-rake migrate --trace
-rake migrate --trace
-rake migrate --trace
-which rake
-which rake
-rake migrate --trace
-script/performance/benchmarker 'User.authenticate("quentin", "test")'
-script/performance/benchmarker 50 'User.authenticate("quentin", "test")'
-script/performance/profiler 'User.authenticate("quentin", "test")' 50
-script/performance/profiler 'User.authenticate("quentin", "test")' 500
-rails --version
-sudo gem install rails -Y
-sudo gem install rails
-rails --version
-\%-
-\(-
-rake test
-rake rails:update
-rails test:units
-ls
-rm -rf "test:units"
-rake test:units
-sudo gem update --system
-cd rails_xt
-rake test:recent
-rake test:recent
-rake test:unit
-rake test:units
+rm -rf typo
+git add git clone git@github.com:fredjean/typo.git
+git clone git@github.com:fredjean/typo.git
+which racoon.10.5
+ls /usr/sbin/racoon*
+ssh nap4jump02.network.org
+host 10.25.120.36
+ssh nap4jump02.network.org
+ssh nap4jump03.network.org
+ssh nap4jump02.network.org
+ssh nap4jump02.network.org
+host kenprdweb02.network.org
+ssh nap4jump02.network.org
+ssh fredjean.net
+ssh nap4jump02.network.org
+cd kenai\~subversion/junction2
+git svn rebase
+git status
+git checkout junction2/app/views/scm/scm/revision.html.erb junction2/db/schema.rb
 cd ..
-rails rails_xt
-rake test:recent
-cd rails_xt
-ls
-rake test:recent
-cd ..
-ls
-cd rails
-mate .
-host xvmoc-4150-03.sfbay
-host xvmoc-4150-03.sfbay.sun.com
-ssh xvmoc-2100-02.sfbay
-cd swupmap
-cd ../swupmap
-cd ..
-mate swupmap
+git checkout junction2/app/views/scm/scm/revision.html.erb junction2/db/schema.rb junction2/public/javascripts/application.js
+git svn rebase
+ssh nap4jump02.network.org
 ssh scala.central
-cd .ssh
-ls -l
 ssh scala.central
-cd swupmap
-script/server
-rails .
-script/server
-ls -a
-svk stat
-exit
-exit
-exit
+ssh scala.central
+irb
+logout
+ls
+cd Projects
+git clone git@github.com:fredjean/jruby_memcache_client.git
+ls
+git clone git://git.kernel.org/pub/scm/git/git.git
+cd git
+ls
+make
+sudo make install
+which git
+git --version
+sudo fink --help
+sudo fink remove git
+which git
+git version
+cd kenai\~subversion
+git svn rebase
+cd .emacs.d
+ls
+cd elpa-to-submit
+ls
+git rm color-theme.el
+git status
+git commit
+git push
+git branch -a
+git remote
+git pull technomancy master
+git status
+git commit
+git push
+sudo port selfupdate
+which port
+sudo port update
+sudo port selfupdate
+sudo port install lame
+du -sh /sw
+sudo port install ffmpeg +lame +libogg +vorbis +theora +faac +faad +xvid +x264 +a52 +dts
 cd hudson
 ls
-cd plugins
-ls
-cd ws7
-ls
-ls -a
-cvs update -Pd
-cd ..
-ls
-ls -a
-cd ..
-ls
-svk stat
-svk sync
-svk update
-svk sync --all
-svk pull
-ls
-svk stat
-svk rm plugins/ws7/src/main/java/net/fredjean/ws7/HelloWorldBuilder.java plugins/ws7/src/main/resources/net/fredjean/ws7/HelloWorldBuilder
-cd ..
-mv hudson hudson.svk
-svn checkout https://svn.dev.java.net/svn/hudson/trunk/hudson
-cd uxharness
-ant common-libs
-ant dep-jars
-hg qapplied
-hg qpop -a
-hg qselect -n
-hg fetch
-java -version
-which java
-cd rem1-nb6
-ls -l
-ls -a
-svk pull
-cd ..
-ls
-cd rem1
-ls
-ls -a
-svn update
-cd ..
-ls
-cd rem1
-svn merge https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port
-svn help
-svn help merge
-which svn
-svn merge https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port
-svn merge https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port .
-svn merge -c 52 https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port
-svn stat
-pwd
-cd rem1-nb6
-svk pull
-cd ..
-svn checkout https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port nb60-port
-svn log --stop-on-copy
-cd nb60-port
-svn log --stop-on-copy
-cd ../rem1
-svn merge -r 19:52 https://rem1.svn.sourceforge.net/svnroot/rem1/branches/nb60-port
-svn stat
-svn stat
-cd release
-ls
-svn stat
-rm -rf libs
-svn update
-ls
-svn stat
-rm -rf src docs
-svn update
-cd ..
-svn stat
-svn stat | grep ^C
-svn stat
-cd release
-ls
-cd libs
-ls
-find ~/Downloads/zk-bin-3.5.1/dist/lib/ -name '*.jar'
-find ~/Downloads/zk-bin-3.5.1/dist/lib/ -name '*.jar' -exec cp {} .
-find ~/Downloads/zk-bin-3.5.1/dist/lib/ -name '*.jar' -exec cp {} . \;
-svn stat .
-svn add jython.jar commons-collections.jar jxl.jar poi.jar itext.jar commons-logging.jar jasperreports.jar
-cd ..
-cd docs
-ls
-ls
-cd ..
-ls
-cd src
-ls
-find ~/Downloads/zk-bin-3.5.1/dist/src/ -name '*.jar' -exec cp {} . \;
-ls
-svn stat
-cd ..
-ls
-cd docs
-ls
-cd ~/Downloads/zk-bin-3.5.1
-ls
-cd doc
-ls
-cd ..
-ls
-cd dist
-ls
-cd rem1-nb6
-mate .
-cd NetBeansProjects
-ls
-rm -rf rem1suite
-cd rem1
-ls
-svn stat
-svn help
 svn info
-ls
-mkdir rem1
 ls -a
-svn add rem1
-mv * rem1
+cd .svk
 ls
-svn stat
-mv rem1/* .
+ls cache
+cd hudson
+svk pull
+logout
+logout
+logout
+cd junction2
+cd kenai\~subversion/junction2
+git svn rebase
+punchctl
+ls /usr/sbin/racoo*
 ls
-svn stat
-svn mv * rem1
+cd bin
 ls
-svn rm rem1
-svn --force rm rem1
-rm nbproject
-rm -rf nbproject
-svn update
-cd ..
+cd /usr/sbin
+md5sum racoon racoon.10.5
+md5sum racoon.10.5
+md5sum racoon
+logout
+ssh nap4jump02.network.org
+cd junction2
+cd kenai\~subversion/junction2
+rake
+ps -ef | grep memcache
+ps -auxwww | grep memcache
+which rake
+rake
+cd kenai\~subversion/junction2
 ls
-cd nb60-port
-mate .
-ls
-cd rem1
-rm -rf nbproject
-cp ../nb60-port/nbproject .
-cp -r ../nb60-port/nbproject .
-svn stat
-svn stat
-rm -rf nbproject
-svn update
-cd ..
-ls
-mv rem1 rem1.abort
-cd rem1.abort
-ls
-svn info
-cd ..
-svn checkout https://rem1.svn.sourceforge.net/svnroot/rem1/trunk rem1
-cd rem1
-svn stat
-svn help
-svn resolved .
-svn stat
-svn stat -u
-svn update
-svn commit
-ssh xvmoc-2100-02.sfbay
-svn stat -u
-ssh xvmoc-4150-03.sfbay
-vi ~/.ssh/known_hosts
-ssh xvmoc-4150-03.sfbay
-ssh xvmdiag@xvmoc-4150-03.sfbay
-ssh xvmdiag@xvmoc-4150-03.sfbay
+rake
+rake db:update
+rake
+script/console
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+rake
+logout
+cd kenai\~subversion/junction2
+jruby -S script/console
+rake
+jruby -S script/console
+git status
 exit
-ssh xvm-x4450-5.west
-ssh xvmdiag@xvm-x4450-5.west
-cd Cyberspace/src
-hg qapplied
-hg in
-hg fetch
-ssh xvmdiag@xvmoc-4150-03.sfbay
-cd Downloads
+cd kenai\~subversion/junction2
+jruby -S script/server
+git add config/initializers/cache.rb
+git status
+git commit
+git svn rebase
+git checkout db/schema.rb
+git svn dcommit
+which memcache
+which memcached
+sudo fink install memcached
+rake
+ps auxwww | grep memcache
+/Library/StartupItems/daemonic-memcached/daemonic-memcached start
+which memcache
+which memcached
+memcached -vv
+jruby -S script/server
+rake
+rake
+rake
+jruby --version
+ls -ld jruby*
+ssh nap4jump02.network.org
+rake
+rake
+rake
+ssh nap4jump02.network.org
+rake
+rake
+rake
+jruby -S script/server
+git status
+git add vendor/plugins/jruby_memcache_client/lib/j_mem_cache.rb
+git commit
+git svn dcommit
+memcached -vv
+rake
+rake
+memcached -vv
+rake
+cd kenai\~subversion/junction2
+jruby -S script/console
+jruby -S script/console
+emacs .zshrc
+which gem
+which rake
+exit
+exit
+logout
+exit
+exit
+exit
+cd kenai\~subversion/junction
+rake
+sudo gem install rails -v=2.0.1
+cd kenai\~subversion/junction2
+jruby -S script/server
+memcached -vv
+jruby -S script/server
+rake
+sudo gem install rails
+jruby -S rake
+cd ../junction2
+rake
+rake
+jruby -S rake
+memcached -vv
+cd kenai\~subversion/junction2
+jruby -S rake
+memcached -vv
+jruby -S rake spec
+jruby -S script/console
+memcached -vv
+jruby -S script/console
+jruby -S rake spec
+jruby -S rake
+jruby -S rake
+memcached -vv
+jruby -S rake
+memcached -vv
+jruby -S rake
+jruby -S rake
+jruby -S rake spec
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+memcached -vv
+jruby -S rake spec
+jruby -S rake
+jruby -S rake
+git status
+git diff v case value
+when Fixnum, Float, true, false
+git diff vendor/plugins/jruby_memcache_client/lib/active_support/cache/j_mem_cache_store.rb
+git status
+git add vendor/plugins/jruby_memcache_client/lib/active_support/cache/j_mem_cache_store.rb vendor/plugins/jruby_memcache_client/lib/j_mem_cache.rb
+git status
+jruby -S script/console
+git commit
+git stash
+git svn dcommit
+git stash apply
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+jruby -S script/console
+ack APPLICATION_REVISION
+ack APPLICATION_REVISION
+jruby -S script/console
+jruby -S script/console
+git status
+jruby -S rake
+jruby -S rake
+git status
+git add config/initializers/cache.rb
+git commit
+jruby -S script/console
+git commit
+jruby -S script/console
+jruby -S rake
+git status
+git add config/initializers/cache.rb
+git commit --amend
+git svn dcommit
+git checkout db/checkout.rb
+git checkout db/schema.rb
+git svn dcommit
+jruby -S rake
+jruby -S script/console
+git status
+rm lib/logging.properties
+jruby -S rake
+jruby -S rake
+jruby -S rake --trace
+jruby -S rake
+jruby -S rake
+jruby -S rake
+jruby -S rake
+jruby -S rake
+jruby -S rake
+jruby -S rake
+jruby -S rake stories
+rake
+jruby -S rake
+jruby -S rake spec
+jruby -S rake spec
+jruby -S rake spec
+jruby -S rake
+jruby -S script/server
+git status
+git add config/initializers/cache.rb
+git add vendor/plugins/jruby_memcache_client/lib/j_mem_cache.rb
+git status
+git commit --amend
+git help
+git status
+git reset --help
+git svn dcommit
+git checkout db/schema.rb
+git svn dcommit
+git log
+git status
+git --version
+gitx
+git svn --help
+git svn
+cd Projects
+cd kenai\~subversion/junction2
+git svn info
+cd ..
+cd ..
+git clone --prefix svn/ -s -r 5200:HEAD https://kenai.com/svn/kenai~subversion/trunk/ kenai
+git svn clone --prefix svn/ -s -r 5200:HEAD https://kenai.com/svn/kenai~subversion/trunk/ kenai
 ls
-cd nbvi-1.2.0.x9
+cd kenai
 ls
-scp *.nbm scala.central:work
-cd rem1
+git svn fetch
+cd ..
 ls
-cd build
+rm -rf kenai
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion/ kenai
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion kenai
+cd git
 ls
-scp *.nbm scala.central:work
-which ajaxterm
-which webconsole
+which git
+git --version
+git pull
+cd bin
+lf
+ls
+rm git*
+which git
+cd Projects/git
+make
+sudo make install
+which git
+git --version
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion kenai
+ls
+rm -rf kenai
 cd Projects
 ls
-ssh hguser@kira.central
-hg --version
-hg --version
-cd Cyberspace
-hg qseries --verbose
-mq fetch
-mq fetch
-mq fetch
-cd Downloads
+rm -rf kenai
+mv kenai\~subversion kenai\~subversion.bad
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion
+git svn clone --prefix svn/ -r 5200:HEAD -r https://kenai.com/svn/kenai~subversion
+cd bin
 ls
-cd work
-ls
-cd Desktop
-ls
-rm -rf *
-ls
-cd
-cd work
-ls
-rm -rf *
-ls
-scp scala.central:Desktop/jnlpgenerator-16 .
-javaws jnlpgenerator-16
-ssh scala.central
-ls /Users/fjean/Desktop/iShowU-Capture.mov
-ls-lh /Users/fjean/Desktop/iShowU-Capture.mov
-ls -lh /Users/fjean/Desktop/iShowU-Capture.mov
-ssh uxhg@kira.central
-hg help tag
-hg help
-hg qseries
-cd Cyberspace/src
-hg qseries
-hg qseries --verbose
-cd Movies
-ls
-scp -r Base_ISO_Config scala.central:public_html/
-cd work
-ls
-javaws jnlpgenerator-16
-javaws jnlpgenerator-16
-cd Projects
-hg clone ssh://uxhg@kira.central/Cyberspace UXCyberspace
-ssh uxhg@kira.central
-ssh scala.central
-cd Cyberspace
-vi .hg/hgrc
-ssh uxhg@kira.central
-exit
-clear
-cd
-cd
-cd Cyberspace
-cd uxharness
-ssh scala.central
-ssh kira.central
-ssh uxhg@kira.central
-ssh scala.central
-cat .hgrc
-hg in
-hg qapplied
-hg qseries
-mq fetch
-ssh scala.central
-ssh xvmoc-2100-02.sfbay
-hg fetch
-ant dep-jars
-ant test
-jps
-kill 12844
-kill -9 12844
-cd ..
-hg stat
-hg commit -m "Fixes unit tests"
-hg in
-hg out
-hg push
-cd work
-javaws jnlpgenerator-16
-javaws jnlpgenerator-16
-cd rem1
-ls
-cd release
-ls
-cd libs
-ls
-find ~/Downloads/zk-bin-3.5.1/dist/lib -name '*.jar'
-find ~/Downloads/zk-bin-3.5.1/dist/lib -name '*.jar' -exec cp {} . \;
-svn stat
-cd ..
-ls
-cd src
-ls
-find ~/Downloads/zk-bin-3.5.1/dist/src -name '*.jar' -exec cp {} . \;
-svn stat .
-cd ..
-ls
-cd docs
-cd ~/Downloads/zk-bin-3.5.1
-ls
-cd do
-cd doc
-ls
-cd ..
-ls
-cd dist
-ls
-cd ..
-ls
-cd ..
-ls
-find . -name zk.xsd
-ls
-cd src
-ls
-cd net/sf/rem/resources
-ls
-cp ~/Downloads/zk-bin-3.5.1/dist/xsd/zul.xsd .
-ls
-cd WEB-INF
-ls
-cd ..
-ls
-cd ../../zk-src-3.5.1
-ls
-cd doc
-ls
-cd ..
-ls
-ls zcommon
-ls bin
-pwd
-ls
-build
-ls
-ant -P
-ant -p
-build javadoc
-cd prj
-ls
-cd javadoc
-ls
-ls -ltr
-rm -rf *.zip
-for dir in * \
-do\
-zip -r $file\
-done
-for dir in * \
-do\
-zip -r $file.zip $file\
-done
-for dir in * \
-do\
-zip -r $dir\
-done
-ls
-zip
-for dir in * \
-do\
-zip -r $dir.zip $dir\
-done
-ls
-unzip -l zcommon.zip
-rm *.zip
-for dir in * \
-do\
-zip -r $dir.zip $dir/*\
-done
-ls
-unzip -l zcommon.zip
-rm *.zip
-for dir in * \
-do\
-zip -r $dir.zip $dir/*\
-done
-rm *.zip
-for dir in *\
-do\
-cd $dir\
-zip -r ../$dir.zip *\
-done
-ls
-cd ..
-ls
-unzip -l zcommon.zip
-cd rem1
-l
-ls
-cd release
-ls
-cd docs
-ls
-cp ~/prj/javadoc/*.zip .
-svn stat .
-ssh scala.central
-ssh uxhg
-ssh uxhg@kira.central
-scp scala.central:/xvm/work/uxcomponents-Model/Wizard\\\ and\\\ Children.png ~/work
-ssh xvmoc-2100-02.sfbay
-cat ~/.hgrc
-cd
-cd Library
-ls
-cd Mozilla
-ls
-cd Extensions
-ls
-cd ./\{3550f703-e582-4d05-9a08-453d09bdfdc6\}
-ls
-ls -a
-cd ..
-ls
-cd ..
-ls
-cd Profiles
-ls
-cd default
-ls
-cd gidgzdzy.slt
-ls
+rm -rf git*
 cd Projects
 which git
-git
-git svn --version
-sudo fink self-update
+cd git
+ls
+vi INSTALL
+make configure
+./configure --prefix=/usr/local
+make
+sudo make clean
+make
+sudo make install
+./configure --prefix=/usr/local
+make
+make clean
+sudo make clean
+make configure
+./configure --prefix=/usr/local
+make
+sudo make install
+which git
+cd bin
+ls
+rm git*
+ls
+which gitk
+cd ..
+ls
+ls share
+cd share
+ls
+rm -rf *
+cd ..
+ls
+sudo rm -rf share
+ls
 cd
-vi .zshrc
-sudo rm -rf /sw
+ls
+cd Projects
+ls
+git svn info
+git svn clone --prefix svn/ -r 5300:HEAD https://kenai.com/svn/kenai~subversion
+pwd
+cd ../..
+ls
+cd kenai\~subversion.bad/junction2
+ls
+git branch
+git log
+gitx
+git branch
+git checkout fix-commit
+git diff fix-commit:master
+git diff master
+git svn rebase
+git diff master
+gitx
+git status
+git diff master
+jruby -S rake
+pwd
+cd ../../kenai\~subversion.bad
+ls
+cd junction2
+jruby -S script/server
+git status
+git add config/initializers/cache.rb vendor/plugins/jruby_memcache_client/lib/j_mem_cache.rb
+git commit
+git svn dcommit
+git checkout db/schema.rb
+git svn dcommit
+git checkout master
+git svn rebase
+git mergetool
+git mergetool --tool=opendiff
+cd ../..
+ls
+bindkey -e
+rm -rf kenai\~subversion
+ls
+mv kenai\~subversion kenai\~subversion.partial
+git svn clone --prefix svn/ -r 5300:HEAD -s https://kenai.com/svn/kenai~subversion
+cd jruby_memcache_client
+git status
+which meld
+meld jruby_memcache_client kenai\~subversion/junction2/vendor/plugins/jruby_memcache_client
+meld jruby_memcache_client kenai\~subversion/junction2/vendor/plugins/jruby_memcache_client
+git status
+git add MIT-LICENSE
+git commit
+git status
+git add lib/active_support/cache/j_mem_cache_store.rb
+git add lib/cgi/session/j_mem_cache_store.rb
+git add lib/j_mem_cache.rb
+git commit
+git status
+git push
 exit
+exit
+logout
+logout

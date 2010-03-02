@@ -1,20 +1,9 @@
-export ANT_HOME=/usr/share/ant
-export GROOVY_HOME=/Users/fjean/groovy
-export GRAILS_HOME=/Users/fjean/grails
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-export JAVA_HOME_16=$JAVA_HOME
-export JAVA_HOME_15=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
-export JAVA_HOME_14=/System/Library/Frameworks/JavaVM.framework/Versions/1.4/Home
-export JDK_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
-export MAVEN_HOME=/Users/fjean/maven
-export JRUBY_HOME=/Users/fjean/jruby
-export SCALA_HOME=/Users/fjean/scala
-export TC_HOME=/Users/fjean/terracotta
-export TC_JAVA_HOME=$JAVA_HOME
-export APPENGINE_HOME=/Users/fjean/appengine
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JDK_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export MYSQL_HOME=/usr/local/mysql
-export PATH=.:~/bin:~/depot_tools:$JAVA_HOME/bin:$SCALA_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$MAVEN_HOME/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:$MYSQL_HOME/bin:$PATH:$JRUBY_HOME/bin
-export CDPATH=.:~:~/Projects:~/Projects/kenai\~subversion:~/Library:~/Documents
+export PATH=.:~/bin:/usr/local/bin:/usr/local/sbin:$MYSQL_HOME/bin:$PATH
+export CDPATH=.:~:~/Projects:~/Projects/kenai:~/Library:~/Documents
+export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/HEAD
 
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;36'
@@ -23,8 +12,12 @@ export EDITOR=emacs
 
 export HGMERGE=kdiff3
 
+export AUTOFEATURE=true
+export RSPEC=true
+
 alias screen='screen -U'
 alias mq='hg -R $(hg root)/.hg/patches'
+alias jr='../jruby/bin/jruby -S'
 
 set meta-flag on
 set input-meta on
@@ -89,3 +82,6 @@ zstyle ':completion:*:*:(^rm):*:*files' ignored-patterns '*?.o' '*?.c~' \
 
 # ignore completion functions (until the _ignored completer)
 zstyle ':completion:*:functions' ignored-patterns '_*'
+
+export CLICOLOR=true
+
