@@ -3,14 +3,16 @@ JAVA_OPTS="-Xmx512M -XX:PermSize=256m -XX:MaxPermSize=512m -Djava.awt.headless=t
 JREBEL_HOME=/Applications/ZeroTurnaround/JRebel
 MAVEN_HOME=/opt/tools/maven2
 MAVEN_OPTS="$JAVA_OPTS -noverify -javaagent:$JREBEL_HOME/jrebel.jar"
-PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:$PATH
+PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/Applications/Flash\ Player.app/Contents/MacOS:$PATH
 export JAVA_HOME JAVA_OPTS JREBEL_HOME MAVEN_HOME MAVEN_OPTS
 
-export CDPATH=.:~:~/dev:~/Library:~/Documents
+export CDPATH=.:~:~/dev:~/dev/video:~/Library:~/Documents
 export CLASSPATH=$CLASSPATH:/usr/local/Cellar/clojure-contrib/HEAD
 
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='1;36'
+
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 
 export EDITOR=emacs
 
